@@ -98,6 +98,11 @@ const DD_REPORTS = [
   { match:["dimarco"],                          name:"DiMarco Constructors LLC",      score:7.00, location:"Rochester, NY", date:"2026-06" },
   { match:["tenm","ten m"],                     name:"TenM Construction LLC",         score:5.50, location:"Cicero, NY",    date:"2026-06" },
   { match:["haynes"],                           name:"Haynes Construction Co.",       score:4.75, location:"Seymour, CT",   date:"2026-06" },
+  { match:["middleburg"],                       name:"Middleburg Construction",       score:8.65, location:"Vienna, VA / FL", date:"2026-06-22" },
+  { match:["weavercooke","weaver cooke","weaver-cooke"], name:"WeaverCooke Construction", score:8.60, location:"Greensboro, NC", date:"2026-06-16" },
+  { match:["acropolis"],                         name:"Acropolis Realty Group",        score:7.80, location:"Syracuse, NY",  date:"2026-06-15" },
+  { match:["dalton builders","dalton build"],    name:"Dalton Builders Inc.",          score:4.30, location:"Dalton, NY",    date:"2026-06-22" },
+
   // ── Grade A (8.0–10.0) — Low Risk ──
   { match:["imc"], name:"IMC Construction, Inc.", score:9.50, grade:"A", risk:"Low", location:"Malvern, PA", date:"2026-06-05" },
   { match:["bbl"], name:"BBL Construction Services", score:8.90, grade:"A", risk:"Low", location:"Albany, NY", date:"2026-06-10" },
@@ -105,13 +110,18 @@ const DD_REPORTS = [
   { match:["pike"], name:"Pike Construction Services", score:8.60, grade:"A", risk:"Low", location:"Rochester, NY", date:"2026-06-10" },
   { match:["rich & gardner","rich and gardner","rich gardner"], name:"Rich & Gardner Construction", score:8.10, grade:"A", risk:"Low", location:"Syracuse, NY", date:"2026-06-10" },
   { match:["hayner hoyt","hayner-hoyt"], name:"Hayner Hoyt Corporation", score:8.05, grade:"A", risk:"Low", location:"Syracuse, NY", date:"2026-06-10" },
+  { match:["middleburg"], name:"Middleburg Construction", score:8.65, grade:"A", risk:"Low", location:"Vienna, VA / FL", date:"2026-06-22" },
+  { match:["weavercooke","weaver cooke","weaver-cooke"], name:"WeaverCooke Construction", score:8.60, grade:"A", risk:"Low", location:"Greensboro, NC", date:"2026-06-16" },
+// replaced-hayner, risk:"Low", location:"Syracuse, NY", date:"2026-06-10" },
   // ── Grade B (6.0–7.99) — Moderate Risk ──
   { match:["unique development","unique dev"], name:"Unique Development Companies", score:7.95, grade:"B", risk:"Moderate", location:"Syracuse, NY", date:"2026-06-10" },
   { match:["pioneer"], name:"Pioneer Development / Companies", score:7.85, grade:"B", risk:"Moderate", location:"Syracuse, NY", date:"2026-06-10" },
   { match:["parsons-mckenna","parsons mckenna","parsons"], name:"Parsons-McKenna Construction", score:7.80, grade:"B", risk:"Moderate", location:"Liverpool, NY", date:"2026-06-10" },
+  { match:["acropolis"], name:"Acropolis Realty Group", score:7.80, grade:"B", risk:"Moderate", location:"Syracuse, NY", date:"2026-06-15" },
+// replaced-parsons, date:"2026-06-10" },
   { match:["fahs"], name:"FAHS Construction Group", score:7.55, grade:"B", risk:"Moderate", location:"Binghamton, NY", date:"2026-06-10" },
   { match:["christa"], name:"Christa Construction", score:7.25, grade:"B", risk:"Moderate", location:"Rochester, NY", date:"2026-06-10" },
-  { match:["redev"], name:"Redev CNY / Redev Construction", score:7.20, grade:"B", risk:"Moderate", location:"Syracuse, NY", date:"2026-06-10" },
+  { match:["redev"], name:"Redev CNY / Redev Construction", score:7.70, grade:"B", risk:"Moderate", location:"Syracuse, NY", date:"2026-06-11" },
   { match:["dimarco"], name:"DiMarco Constructors LLC", score:7.00, grade:"B", risk:"Moderate", location:"Rochester, NY", date:"2026-06-10" },
   { match:["griffon","wilder balter","wbp"], name:"Griffon Construction (WBP Dev)", score:7.00, grade:"B", risk:"Moderate", location:"Chappaqua, NY", date:"2026-06-10" },
   { match:["celia","sam celia"], name:"Celia Construction / Sam Celia", score:6.90, grade:"B", risk:"Moderate", location:"Whitesboro, NY", date:"2026-06-10" },
@@ -120,6 +130,8 @@ const DD_REPORTS = [
   { match:["first onsite"], name:"First Onsite Property Restoration", score:5.10, grade:"C", risk:"Elevated", location:"Greenwood Village, CO", date:"2026-06-10" },
   // ── Grade D (1.0–3.99) — High Risk ──
   { match:["haynes"], name:"Haynes Construction Co.", score:4.75, grade:"D", risk:"High", location:"Seymour, CT", date:"2026-06-10" },
+  { match:["dalton builders","dalton build"], name:"Dalton Builders Inc.", score:4.30, grade:"D", risk:"High", location:"Dalton, NY", date:"2026-06-22" },
+
 ];
 
 const lookupDD = (client) => {
